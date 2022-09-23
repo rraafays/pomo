@@ -1,6 +1,6 @@
 CFLAGS=-Wall -g
 
-all: clean build install
+all: clean build
 
 clean:
 	rm -f pomo
