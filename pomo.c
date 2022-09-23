@@ -3,16 +3,30 @@
 
 int main(int argc, char *argv[])
 {
-  for (int m = 1; m >= 0; m--)
+  int s = 0;
+  while (1)
   {
-    int s = 0;
-    for (s = 59; s >= 0; s--)
+    for (int m = 24; m >= 0; m--)
     {
-      sleep(1);
-      printf("\r%02d:%02d", m, s);
-      fflush(stdout);
+      for (s = 59; s >= 0; s--)
+      {
+        sleep(1);
+        printf("\r%02d:%02d 🍅 Work time!", m, s);
+        fflush(stdout);
+      }
+      s = 59;
     }
-    s = 59;
+
+    for (int m = 4; m >= 0; m--)
+    {
+      for (s = 59; s >= 0; s--)
+      {
+        sleep(1);
+        printf("\r%02d:%02d 🍵 Break time grab some tea! ", m, s);
+        fflush(stdout);
+      }
+      s = 59;
+    }
   }
 
   return 0;
