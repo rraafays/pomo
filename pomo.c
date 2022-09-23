@@ -10,9 +10,9 @@ int main(int argc, char *argv[])
     {
       for (s = 59; s >= 0; s--)
       {
-        sleep(1);
         printf("\r%02d:%02d 🍅 Work time!", m, s);
         fflush(stdout);
+        sleep(1);
       }
       s = 59;
     }
@@ -21,9 +21,9 @@ int main(int argc, char *argv[])
     {
       for (s = 59; s >= 0; s--)
       {
-        sleep(1);
         printf("\r%02d:%02d 🍵 Break time grab some tea! ", m, s);
         fflush(stdout);
+        sleep(1);
       }
       s = 59;
     }
