@@ -11,9 +11,9 @@ int main(int argc, char *argv[]) // proper version of int main() which includes 
       for (s = 0; s >= 0; s--) // 60 second timer
       {
         printf("\r%02d:%02d 🍅 Work time!", m, s);
-        fflush(stdout);
-        if (s == 0) { m--; s = 60; }
-        sleep(1);
+        fflush(stdout); // cleans the output
+        if (s == 0) { m--; s = 60; } // if we hit 0 seconds then it deducts a minute and resets to 60
+        sleep(1); // sleeps for 1 second
       }
     }
 
