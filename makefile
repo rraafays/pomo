@@ -9,4 +9,4 @@ build:
 	cc $(CFLAGS) pomo.c -o pomo
 
 install:
-	cp pomo /usr/bin/
+	cp -f pomo /usr/bin/
