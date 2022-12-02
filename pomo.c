@@ -14,19 +14,19 @@ int main(int argc, char *argv[]) // proper version of int main() which includes 
   return 0; // gracefully exits program should while loop break
 }
 
-void timer(int m, char t[]) // function which takes in a number of minutes represented by 'm' and also takes in a string represented by 't'
+void timer(int minutes, char message[]) // function which takes in a number of minutes represented by 'm' and also takes in a string represented by 't'
 {
-  int s = 0; // declares an empty integer used as seconds
-  for (int x = m; x >= 0; x--) // 2d for loop to deduct minutes every 60 seconds
+  int seconds = 0; // declares an empty integer used as seconds
+  for (int x = minutes; x >= 0; x--) // 2d for loop to deduct minutes every 60 seconds
   {
-    for (s = 0; s >= 0; s--) // 60 second timer
+    for (seconds = 0; seconds >= 0; seconds--) // 60 second timer
     {
       printf("\33[2K\r"); // clears the current line
-      printf("%02d:%02d %s", x, s, t); // minutes, seconds and the text
+      printf("%02d:%02d %s", x, seconds, message); // minutes, seconds and the text
       fflush(stdout); // cleans the output
       sleep(1); // sleeps for 1 second
-      if (x == 0 && s == 0) { break; } // if both the minutes are 0 and seconds are 0, break
-      if (s == 0) { x--; s = 60; } // if we hit 0 seconds then it deducts a minute and resets to 60
+      if (x == 0 && seconds == 0) { break; } // if both the minutes are 0 and seconds are 0, break
+      if (seconds == 0) { x--; seconds = 60; } // if we hit 0 seconds then it deducts a minute and resets to 60
     }
   }
 }
