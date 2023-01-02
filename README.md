@@ -6,7 +6,7 @@ Lightweight terminal pomodoro timer written in C.
 - quality: maintain high quality C code
 - hackable: comment unobvious code and use few lines with good explanation
 
-<img alt="pomo demo" src="https://raafay.world/projects/pomo.gif" width="720" />
+<img alt="pomo demo" src="https://raafay.world/images/projects/pomo.gif" width="720" />
 
 ## Getting started
 First build pomo:
