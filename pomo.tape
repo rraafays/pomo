@@ -1,12 +1,11 @@
 Output pomo.gif
 
-Set Framerate 60
 Set FontSize 32
-Set Width 1200
-Set Height 600
+Set Width 720
+Set Height 360
 
 Type pomo
 Sleep 500ms
 Enter
 
-Sleep 5s
+Sleep 10s
